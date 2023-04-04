@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Navbar.css';
-import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai';
 import message from '../../Images/message.png'
 function Navbar() {
   const [showbutton,setShowButoon]=useState(false);
@@ -10,8 +9,9 @@ function Navbar() {
          <div className='linksparentbody'>
              <h1> <img src={message}/> Get in Touch</h1>
             <div className='closeicon'>
-            <AiOutlineClose style={{display : showbutton? 'block' : 'none' }} onClick={()=>{setShowButoon(false)}} className='closeicon'/>
-            <AiOutlineMenu style={{display : showbutton? 'none' : 'block' }} onClick={()=>{setShowButoon(true)}} className='closeicon'/>
+            <i style={{display : showbutton? 'block' : 'none' }} onClick={()=>{setShowButoon(false)}} className='closeicon' class="fa-regular fa-bars"></i>
+            <i style={{display : showbutton? 'none' : 'block' }} onClick={()=>{setShowButoon(true)}} className='closeicon' class="fa-sharp fa-light fa-circle-xmark"></i>
+  
       
             </div>
                </div>
