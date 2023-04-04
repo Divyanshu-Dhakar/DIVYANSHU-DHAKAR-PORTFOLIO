@@ -1,0 +1,16 @@
+.blog-row{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;align-items: center;
+}.head h1{
+    font-family: 'Montserrat';
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 400;
+	text-decoration: underline #006EDB;
+	border-radius: 1rem;
+}
+@media screen and (max-width: 990px){
+    .blog-row{flex-direction: column;
+        margin: 3rem 0;}
+}

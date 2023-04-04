@@ -1,23 +1,28 @@
 import React from 'react';
 import './HeroSection.css';
+import Fade from 'react-reveal/Fade';
 
+import main_img from '../../Images/main_img.png'
 const HeroSection = () => {
   return (
-    <div>
-      <div className='hero-section'>
-      <div className='hero-content'>
-        <h2>Hii!!<span>👋</span> I am</h2>
+    
+    <div id="home">
+      <div className='hero-section' >
+      <div className='hero-content' >
+        <h4>Hello I'm</h4>
         <h1>Divyanshu Dhakar</h1>
-        <h3>
+        <h3>Creative Front End Web Developer</h3>
+        <h4>
         Creating Digital Brands, Experiences, and Products
-        </h3>
+        </h4>
       </div>
       <div className='hero-photo'>
-        <img src='https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'></img>
+      <img src={main_img} alt='Hero' />
       </div>
       </div>
       
     </div>
+
   )
 }
 

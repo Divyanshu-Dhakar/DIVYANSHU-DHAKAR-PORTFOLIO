@@ -1,0 +1,9 @@
+.portfolio> .head > h1{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: underline #006EDB;
+    border-radius: 1rem;
+
+}

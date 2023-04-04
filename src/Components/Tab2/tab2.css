@@ -1,0 +1,26 @@
+.projects-row{
+	display: block;
+}
+.projects{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem 8rem;
+}
+.Project{
+margin-right: 2rem;
+}
+@media screen and (max-width: 990px){
+    .portfolio {
+        margin: 5rem 1rem;
+    
+    }
+    .head h1 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+	.projects{
+	flex-direction: column;
+	margin: 1rem 2rem;
+	}
+}

@@ -1,5 +1,5 @@
 .about-section {
-    margin: 4rem 10rem;
+    margin: 10rem 10rem 8rem 10rem;
 
 }
 
@@ -21,17 +21,32 @@
     margin: 4rem;
 }
 .about-img img{
+    border-radius: 1rem;
     height: 100%;
     max-width: 15rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .about .content{
     margin-left: 3.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    
 }
 .about .content h5{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     margin-top: 1rem;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
+}
+.about .content p{
+    font-size: 1.1rem;
+    font-weight: 500;}
+.about .content h5 img{
+    margin-right: 0.5rem;
+    
 }
 
 

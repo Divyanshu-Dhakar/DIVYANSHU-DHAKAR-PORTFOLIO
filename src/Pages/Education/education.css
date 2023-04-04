@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--dark-1: aliceblue;
+	--dark-2: aliceblue;
+	--black: #000000;
+	--light: #006EDB;
+}
+
+
+.container h1{
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-decoration: underline #006EDB;
+    border-radius: 1rem;
+margin: 7rem 0;
+}
+.container {
+	max-width: 991px;
+	width: 100%;
+	padding: 0 16px;
+	margin: 48px auto;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	grid-gap: 16px;
+}
+.experience-card {
+	padding: 24px;
+	border-radius: 12px;
+	background: var(--dark-2);
+	color: #222222;
+	max-width: calc(50% - 30px);
+	position: relative;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+z-index: -10;
+}
+.experience-card:nth-child(odd) {
+	align-self: flex-end;
+}
+.experience-card::before {
+	content: '';
+	position: absolute;
+	top: 12px;
+	border: 12px solid;
+}
+.experience-card:nth-child(odd)::before {
+	right: 100%;
+	border-color: transparent var(--dark-2) transparent transparent;
+}
+.experience-card:nth-child(even)::before {
+	left: 100%;
+	border-color: transparent transparent transparent var(--dark-2);
+}
+.experience-card h3 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.experience-card p {
+	margin-bottom: 16px;
+}
+.experience-card .time {
+	font-size: 14px;
+	color: var(--black);
+}
+.experience-card .dot {
+	position: absolute;
+	top: 16px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--light);
+}
+.experience-card:nth-child(even) .dot {
+	left: calc(100% + 22px);
+}
+.experience-card:nth-child(odd) .dot {
+	right: calc(100% + 22px);
+}
+.line {
+	position: absolute;
+	top: 16px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2px;
+	background: var(--light);
+    z-index: -100;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container h1{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+
+    }
+	.line {
+		left: 12px;
+	}
+	.experience-card:nth-child(odd) {
+		align-self: flex-start;
+	}
+	.wrapper {
+		padding-left: 42px;
+	}
+	.experience-card:nth-child(even) .dot {
+		right: calc(100% + 22px);
+		left: unset;
+	}
+	.experience-card:nth-child(even)::before {
+		right: 100%;
+		left: unset;
+		border-color: transparent var(--dark-2) transparent transparent;
+	}
+	.experience-card {
+		max-width: 100%;
+	}
+}
+
+
+
+@media screen and (max-width: 420px) {
+	.line,
+	.experience-card .dot,
+	.experience-card::before {
+		display: none;
+	}
+	.wrapper {
+		padding-left: 0;
+	}
+}
